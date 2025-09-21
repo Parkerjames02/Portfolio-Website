@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parker's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/solid.min.css">
+    <script src="code.js"></script>
+</head>
+<body>
+    <section id="intro-page">
+        <div id="header">
+            <nav>
+                <div class="name">Parker Haynie</div>
+                <ul>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="mailto:parkerjames4097@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="welcome">
+            <div id="about-me">
+                <div>
+                    <img src="assets/Cropped Headshot.jpg" class="headshot">
+                </div>
+                <p class="hi">
+                    Hi, I'm Parker Haynie
+                </p>
+                <p class="intro">
+                    I'm a passionate programmer that enjoys creating lightweight desktop,<br>
+                    web, and mobile applications through the use of different programming<br>
+                    languages and application creation tools.
+                </p>
+                <div class="about-me-icons">
+                    <a href="https://github.com/Parkerjames02" target="_blank" class="about-me-links">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/parker-haynie-3398aa225/"  target="_blank" class="about-me-links">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:parkerjames4097@gmail.com" class="about-me-links">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <button onclick="goAbout()" class="about-me-button">About Me</button>
+            </div>
+        </section>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#intro-page",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xff0000,
+            backgroundColor: 0x090909,
+            points: 14.00,
+            spacing: 14.00
+        })
+    </script>
+    <section id="languages">
+        <div class="programming-langauges">
+            <p class="languages-title">
+                <!-- HTML, CSS, JavaScript, C#, Java, C++, Python, Rust, React Native, SQL -->
+                Languages I Use
+            </p>
+            <div class="languages-container">
+                <div>
+                    <img src="assets/languages/html_icon.png" id="html">
+                    <p class="hidden-text">HTML</p>
+                </div>
+                <div>
+                    <img src="assets/languages/css_icon.png">
+                    <p class="hidden-text">CSS</p>
+                </div>
+                <div>
+                    <img src="assets/languages/javascript_icon.png">
+                    <p class="hidden-text">JavaScript</p>
+                </div>
+                <div>
+                    <img src="assets/languages/Csharp_icon.png">
+                    <p class="hidden-text">C#</p>
+                </div>
+                <div>
+                    <img src="assets/languages/C++_icon.png">
+                    <p class="hidden-text">C++</p>
+                </div>
+                <div>
+                    <img src="assets/languages/java_icon.png">
+                    <p class="hidden-text">Java</p>
+                </div>
+                <div>
+                    <img src="assets/languages/python_icon.png">
+                    <p class="hidden-text">Python</p>
+                </div>
+                <div>
+                    <img src="assets/languages/rust_icon.png">
+                    <p class="hidden-text">Rust</p>
+                </div>
+                <div>
+                    <img src="assets/languages/react_native_icon.png">
+                    <p class="hidden-text">React Native</p>
+                </div>
+                <div>
+                    <img src="assets/languages/sql_icon.png">
+                    <p class="hidden-text">SQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tools">
+        <div class="application-tools">
+            <p class="tools-title">
+                <!-- Visual Studio, Visual Studio Code, IntelliJ, GitHub, Trello, Figma, MySQL Workbench, Microsoft Suite -->
+                Tools I Use
+            </p>
+            <div class="tools-container">
+                <div>
+                    <img src="assets/tools/visual_studio_icon.png">
+                    <p class="hidden-text">Visual Studio</p>
+                </div>
+                <div>
+                    <img src="assets/tools/visual_studio_code_icon.png">
+                    <p class="hidden-text">Visual Studio Code</p>
+                </div>
+                <div>
+                    <img src="assets/tools/intellij_icon.png">
+                    <p class="hidden-text">IntelliJ</p>
+                </div>
+                <div>
+                    <img src="assets/tools/github_icon.png">
+                    <p class="hidden-text">GitHub</p>
+                </div>
+                <div>
+                    <img src="assets/tools/trello_icon.png">
+                    <p class="hidden-text">Trello</p>
+                </div>
+                <div>
+                    <img src="assets/tools/figma_icon.png">
+                    <p class="hidden-text">Figma</p>
+                </div>
+                <div>
+                    <img src="assets/tools/mysql_workbench_icon.png">
+                    <p class="hidden-text">MySQL Workbench</p>
+                </div>
+                <div>
+                    <img src="assets/tools/microsoft_suite_icon.png">
+                    <p class="hidden-text">Microsoft Suite</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="all-projects">
+            <p class="projects-title">
+                My Projects
+            </p>
+            <div class="projects-container">
+                <div onclick="window.open('https://github.com/Parkerjames02/Oasis-Prototype-WPF', '_blank')">
+                    <img src="assets/projects/oasis.jpg">
+                    <p class="project-hidden-title">Oasis</p>
+                    <p class="project-hidden-text">A stress and anxiety relief desktop
+                    application created with the WPF framework using XAML and C# that 
+                    allows the user to create their own custom stress relief experience.
+                    Offers a wide selection of video, audio, and stress relief exercise
+                    guides to best accommodate everyone’s stress relief desires.</p>
+                </div>
+                <div onclick="window.open('https://github.com/Parkerjames02/Trivia-Game', '_blank')">
+                    <img src="assets/projects/trivia.png">
+                    <p class="project-hidden-title">Trivia Game</p>
+                    <p class="project-hidden-text">A trivia game using Python that 
+                    would give the user a short five question trivia quiz that related
+                    to the three different quiz categories being animals, food, and
+                    movies. This application also had great exception handling.</p>
+                </div>
+                <div onclick="window.open('https://github.com/Parkerjames02/Simple-Note-Taking-App', '_blank')">
+                    <img src="assets/projects/simple_notes.jpg">
+                    <p class="project-hidden-title">Simple Note Taking App</p>
+                    <p class="project-hidden-text">A note taking application using Java
+                    that had a login feature where you could either login as a guest or 
+                    registered user. After the user logs in they can start new notes,
+                    add on to pre-existing notes, or view their notes. This was all
+                    done via file IO.</p>
+                </div>
+                <div onclick="window.open('https://github.com/Parkerjames02/Comet-Media-Player', '_blank')">
+                    <img src="assets/projects/comet_player.jpg">
+                    <p class="project-hidden-title">Comet Media Player</p>
+                    <p class="project-hidden-text">A simple media player using C# that
+                    supported multiple different video file formats such as mp4, mkv,
+                    and wmv. It also supports audio file formats like mp3, wav, and m4a.</p>
+                </div>
+            </div>
+            <button onclick="window.open('https://github.com/Parkerjames02', '_blank')" class="more-projects-button">More Projects</button>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <img src="assets/logos/transparent-logo-red.png" class="logo"/>
+            <ul>
+                <a href="https://github.com/Parkerjames02" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/parker-haynie-3398aa225/" target="_blank">LinkedIn</a>
+                <a href="mailto:parkerjames4097@gmail.com">Email</a>
+                <a href="javascript:goAbout()">About</a>
+            </ul>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color: black;
+}
+
+#intro-page {
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 10%;
+    padding: 25px 10%;
+    background-color: transparent;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.name {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+#welcome {
+    width: 100%;
+    height: 90vh;
+}
+
+#about-me {
+    padding-top: 12vh;
+}
+
+.headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    border-radius: 100%;
+}
+
+.hi {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+.intro {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 23px;
+    color: white;
+}
+
+.about-me-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-me-icons > a {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.fa-github {
+    color: white;
+    font-size: 30px;
+}
+
+.fa-linkedin {
+    color: white;
+    font-size: 30px;
+}
+
+.fa-envelope {
+    color: white;
+    font-size: 30px;
+}
+
+.about-me-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    margin: 25px auto;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.about-me-button:hover {
+    background-color: white;
+    color: black;
+}
+
+#languages {
+    width: 100%;
+    height: 50vh;
+    background-color: #090909;
+}
+
+.programming-langauges {
+    padding-top: 2.5vh;
+}
+
+.languages-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+.languages-container {
+    padding-top: 3.5vh;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages-container > div {
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.languages-container > div > img {
+    will-change: transform;
+    height: 125px;
+    transition: transform 0.3 ease-in-out, filter 0.3s ease-in-out;
+}
+
+.languages-container > div > img:hover {
+    transform: scale(0.85);
+    filter: brightness(60%);
+}
+
+.languages-container > div > img:hover + .hidden-text{
+    opacity: 1;
+    visibility: visible;
+}
+
+#tools {
+    width: 100%;
+    height: 50vh;
+    background-color: #090909;
+}
+
+.application-tools {
+    padding-top: 0vh;
+}
+
+.tools-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+.tools-container {
+    padding-top: 3.5vh;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools-container > div {
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tools-container > div > img {
+    will-change: transform;
+    height: 125px;
+    transition: transform 0.3 ease-in-out, filter 0.3s ease-in-out;
+}
+
+.tools-container > div > img:hover{
+    transform: scale(0.85);
+    filter: brightness(60%);
+}
+
+.tools-container > div > img:hover + .hidden-text{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden-text {
+    font-size: 27px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visability 0s, opacity 0.3s ease-in-out;
+    color: white;
+}
+
+#projects {
+    width: 100%;
+    height: 100vh;
+    background-color: #090909;
+}
+
+.all-projects {
+    padding-top: 1vh;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+.projects-container {
+    padding-top: 2vh;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: 36.5vw 36.5vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.projects-container > div {
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 15px;
+    position: relative;
+}
+
+.projects-container > div > img {
+    height: 38vh;
+}
+
+.projects-container > div:hover img{
+    transform: scale(1.125);
+    filter: brightness(45%);
+}
+
+.projects-container > div:hover .project-hidden-title{
+    opacity: 1;
+    visibility: visible;
+}
+
+.projects-container > div:hover .project-hidden-text{
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-hidden-title{
+    font-size: 50px;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    inset: 0;
+    position: absolute;
+    font-weight: bold;
+}
+
+.project-hidden-text{
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    inset: 0;
+    position: absolute;
+    padding-top: 80px;
+}
+
+.more-projects-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    margin: 25px auto;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.more-projects-button:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #090909;
+    text-align: center;
+    align-content: center;
+}
+
+.logo {
+    height: 7vh;
+}
+
+footer ul {
+    word-spacing: 50px;
+}
+
+footer ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: #090909;
+}
+
+.about-title {
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+.about-text {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 1vh;
+    margin-left: 29vw;
+    margin-right: 29vw;
+}
+
+.resume-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    margin: 19px auto;
+    font-size: 16px;
+    border-radius: 15px;
+    margin-top: 3vh;
+}
+
+.resume-button:hover {
+    background-color: white;
+    color: black;
+}
