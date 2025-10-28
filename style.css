@@ -159,9 +159,11 @@ nav ul li a:hover::after {
     padding-top: 3.5vh;
     display: grid;
     gap: 20px;
-    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     align-items: center;
+    max-width: 1330px;
+    margin: 0 auto;
 }
 
 .languages-container > div {
@@ -174,8 +176,10 @@ nav ul li a:hover::after {
 
 .languages-container > div > img {
     will-change: transform;
-    height: 125px;
     transition: transform 0.3 ease-in-out, filter 0.3s ease-in-out;
+    height: auto;
+    max-height: 125px;
+    width: 100%;
 }
 
 .languages-container > div > img:hover {
@@ -209,9 +213,11 @@ nav ul li a:hover::after {
     padding-top: 3.5vh;
     display: grid;
     gap: 20px;
-    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
+    max-width: 1070px;
+    margin: 0 auto;
 }
 
 .tools-container > div {
@@ -224,8 +230,11 @@ nav ul li a:hover::after {
 
 .tools-container > div > img {
     will-change: transform;
-    height: 125px;
     transition: transform 0.3 ease-in-out, filter 0.3s ease-in-out;
+    height: auto;
+    max-height: 125px;
+    width: 100%;
+    max-width: 140px;
 }
 
 .tools-container > div > img:hover{
@@ -264,13 +273,14 @@ nav ul li a:hover::after {
 }
 
 .projects-container {
-    padding-top: 2vh;
+    padding: 2vh 20px;
     display: grid;
-    row-gap: 30px;
-    grid-template-columns: 36.5vw 36.5vw;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    max-width: 1350px;
+    margin: 0 auto;
 }
 
 .projects-container > div {
@@ -282,45 +292,49 @@ nav ul li a:hover::after {
     display: flex;
     border-radius: 15px;
     position: relative;
+    width: 100%;
 }
 
 .projects-container > div > img {
-    height: 38vh;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
 }
 
-.projects-container > div:hover img{
+.projects-container > div:hover img {
     transform: scale(1.125);
     filter: brightness(45%);
 }
 
-.projects-container > div:hover .project-hidden-title{
-    opacity: 1;
-    visibility: visible;
-}
-
-.projects-container > div:hover .project-hidden-text{
+.projects-container > div:hover .project-hidden-title,
+.projects-container > div:hover .project-hidden-text {
     opacity: 1;
     visibility: visible;
 }
 
 .project-hidden-title{
-    font-size: 50px;
+    font-size: clamp(2.5rem, 4vw, 3.25rem);
     visibility: hidden;
     opacity: 0;
     color: white;
     inset: 0;
+    top: 1%;
     position: absolute;
     font-weight: bold;
+    overflow: hidden;
+    text-align: center;
 }
 
 .project-hidden-text{
-    font-size: 20px;
+    font-size: clamp(1.15rem, 2vw, 1.5rem);
     visibility: hidden;
     opacity: 0;
     color: white;
     inset: 0;
+    top: 22%;
     position: absolute;
-    padding-top: 80px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .more-projects-button {
@@ -329,8 +343,8 @@ nav ul li a:hover::after {
     color: white;
     padding: 15px 32px;
     text-align: center;
-    display: block;
-    margin: 25px auto;
+    display: flex;
+    margin: auto;
     font-size: 16px;
     border-radius: 15px;
 }
@@ -402,4 +416,10 @@ footer ul a {
 .resume-button:hover {
     background-color: white;
     color: black;
+}
+
+@media (max-width: 700px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
 }
