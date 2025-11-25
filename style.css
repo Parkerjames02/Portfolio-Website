@@ -425,8 +425,8 @@ footer ul a {
     }
 
     #about-me {
-    padding-top: 8vh;
-}
+        padding-top: 7vh;
+    }
 
     .projects-container {
         grid-template-columns: 1fr;
