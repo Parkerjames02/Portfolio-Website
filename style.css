@@ -313,7 +313,7 @@ nav ul li a:hover::after {
 }
 
 .project-hidden-title{
-    font-size: clamp(2.5rem, 4vw, 3.25rem);
+    font-size: clamp(1.90rem, 4vw, 3.25rem);
     visibility: hidden;
     opacity: 0;
     color: white;
@@ -326,7 +326,7 @@ nav ul li a:hover::after {
 }
 
 .project-hidden-text{
-    font-size: clamp(1.15rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     visibility: hidden;
     opacity: 0;
     color: white;
@@ -422,4 +422,18 @@ footer ul a {
     .projects-container {
         grid-template-columns: 1fr;
     }
+
+    .projects-container > div > img {
+        filter: brightness(45%);
+    }
+
+    .project-hidden-title {
+        visibility: visible;
+        opacity: 100%;
+    }
+
+    .project-hidden-text {
+        visibility: visible;
+        opacity: 100%;
+    }  
 }
