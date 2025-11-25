@@ -424,6 +424,10 @@ footer ul a {
         padding-left: 9px;
     }
 
+    #about-me {
+    padding-top: 8vh;
+}
+
     .projects-container {
         grid-template-columns: 1fr;
     }
