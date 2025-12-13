@@ -168,7 +168,7 @@ nav ul li a:hover::after {
 
 .languages-container > div {
     text-align: center;
-    overflow: hidden;
+
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -426,6 +426,27 @@ footer ul a {
 
     #about-me {
         padding-top: 5vh;
+    }
+
+    .languages-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .languages-container > div > img {
+        height: auto;
+        max-height: 125px;
+        width: 100%;
+    }
+
+    .tools-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tools-container > div > img {
+        height: auto;
+        max-height: 125px;
+        width: 100%;
+        max-width: 140px;
     }
 
     .projects-container {
