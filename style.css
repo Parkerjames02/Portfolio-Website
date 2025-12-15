@@ -138,6 +138,12 @@ nav ul li a:hover::after {
     color: black;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+    background-color: #090909;
+}
+
 #languages {
     width: 100%;
     height: 50vh;
@@ -427,6 +433,11 @@ footer ul a {
         padding-top: 5vh;
     }
 
+    .hidden-text {
+        opacity: 1;
+        visibility: visible;
+    }
+
     .languages-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -465,10 +476,4 @@ footer ul a {
         visibility: visible;
         opacity: 100%;
     }  
-}
-
-.flex {
-    display: flex;
-    flex-direction: column;
-    background-color: #090909;
 }
