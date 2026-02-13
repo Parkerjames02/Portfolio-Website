@@ -15,3 +15,8 @@ It showcases the programming languages that I know, the tools that I use, as wel
 I have had a resume for a while but it doesn't do a good job of displaying what I have worked on visually which is why I decided to create this website. On this website I plan to show off my skills as far as the programming languages that I use, the tools that I use, as well as the projects that I have worked on. This website will change and grow as my skillset broadens.
 # 🔗 Link
 [parkers-portfolio.work](parkers-portfolio.work)
+# 👀 Preview
+
+
+https://github.com/user-attachments/assets/857a9dc9-c90b-4d5e-8829-232783ff119f
+
